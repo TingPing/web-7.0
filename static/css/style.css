@@ -339,6 +339,7 @@ h1 {
 }
 
 .art-info {
+    line-height: 2.1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -480,7 +481,7 @@ h1 {
 }
 
 .footerchild:last-child {
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 }
 
 .footer-push {
@@ -512,22 +513,17 @@ footer a:hover {
     padding-left: 30px;
 }
 
-@media (--max-sm) {
+@media (--max-md) {
     .footer-container {
         flex-direction: column;
     }
 
     .footer-push {
         margin-left: 0;
-        width: 100%;
     }
 
     .footerchild ul li:last-child {
         margin-bottom: .5em;
-    }
-
-    .footer-push ul li:last-child {
-        margin-bottom: .1em;
     }
 
     .hdn {

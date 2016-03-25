@@ -32,12 +32,12 @@
             {%- for link in config.SOCIAL %}
             <li>
                 <a href="{{ link.link }}" target="_blank">
-                    <i class="fa fa-{{ link.icon }} fa-fw"></i> <span class="hdn">{{ link.name }}</span></a>
+                    <i class="fa fa-{{ link.icon }} fa-fw"></i> {{ link.name }}</a>
             </li>
             {%- endfor %}
             <li>
                 <a href="{{ url_for("archive") }}"><i class="fa fa-rss fa-fw"></i>
-                <span class="hdn">News Archive</span></a>
+                News Archive</a>
             </li>
             <li>
                 <a href="https://www.privateinternetaccess.com/pages/buy-vpn/freend/" target="_blank">
