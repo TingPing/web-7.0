@@ -103,10 +103,12 @@ img {
 .navbar a {
     margin-top: 2px;
     height: 40px;
+    transition: width .5s;
 }
 
 .nlogo {
     height: 40px;
+    transition: width .5s;
 }
 
 .tlogo {
@@ -114,6 +116,59 @@ img {
     margin-bottom: -9px;
     margin-left: -10px;
     margin-right: -10px;
+    transition: width .5s;
+}
+
+.navbar form  {
+    float: right;
+    margin-left: auto;
+}
+
+input {
+    font-size: inherit;
+    font-family: 'Open Sans';
+    font-feature-settings: "lnum";
+    font-variant-numeric: lining-nums;
+    color: var(--footer-link-color);
+    outline: none;
+    width: auto;
+    padding: 0;
+    height: 1.3em;
+    padding-left: 0.1em;
+    background-color: transparent;
+    position: relative;
+}
+
+.navbar form input[type=text] {
+    width: 1em;
+    padding-left: 2em;
+    border: none;
+    background-color: var(--navbar-bg);
+    transition: border-bottom .5s, width .5s;
+}
+
+.navbar form input[type=text]:focus {
+    border-bottom: 1px solid var(--footer-hover-color);
+    width: 100%;
+}
+
+label {
+    white-space: nowrap;
+    display: inline;
+    font-size: inherit;
+    width: 100%;
+    position: relative;
+    height: 1.3em;
+    margin-top: .7em;
+}
+
+label i.fa {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    z-index: 202;
+    color: var(--footer-hover-color);
+    font-size: 2em;
 }
 
 /* main */
